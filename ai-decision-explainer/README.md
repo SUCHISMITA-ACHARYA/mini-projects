@@ -26,7 +26,6 @@ HTML, CSS, JavaScript
 Backend:<br>
 -FastAPI<br>
 -Pydantic AI<br>
--AI<br>
 -OpenRouter (LLM-based reasoning)<br>
 
 Deployment:<br>
@@ -40,3 +39,4 @@ uvicorn main:app --port 8001<br>
 
 
 Open frontend using Live Server or directly in the browser.
+
