@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Decision Explainer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+    <h1>🧠AI Decision Explainer</h1>
+    <p class="subtitle">
+      Get a clear, structured explanation before making important decisions.
+    </p>
+
+    <form id="decision-form">
+      <label>Decision</label>
+      <textarea
+        id="decision"
+        placeholder="e.g. Should I learn frontend or backend development?"
+        required
+      ></textarea>
+
+      <label>Context</label>
+      <textarea
+        id="context"
+        placeholder="e.g. I am a second-year student with Python experience."
+        required
+      ></textarea>
+
+      <button type="submit">Explain Decision</button>
+    </form>
+
+    <div id="loading" class="hidden">Analyzing your decision...</div>
+
+    <div id="result" class="hidden">
+      <h2>Explanation</h2>
+
+      <div class="section">
+        <h3>⚖️ Key Factors</h3>
+        <ul id="factors"></ul>
+      </div>
+
+      <div class="section">
+        <h3>💡 Pros</h3>
+        <ul id="pros"></ul>
+      </div>
+
+      <div class="section">
+        <h3>⚠️ Cons</h3>
+        <ul id="cons"></ul>
+      </div>
+
+      <div class="section">
+        <h3>Reasoning</h3>
+        <ul id="explanation"></ul>
+      </div>
+
+      <div class="section">
+        <h3>✅ Final Recommendation</h3>
+        <p id="recommendation"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

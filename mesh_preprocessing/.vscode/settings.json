@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "C:\\Users\\suchi\\mesh_preprocessing\\venv_mesh\\Scripts\\python.exe",
+  "python.analysis.extraPaths": [
+    "C:\\Users\\suchi\\mesh_preprocessing\\src"
+  ]
+}
